@@ -44,3 +44,17 @@ This is part of an application process. The goal is to show my knowledge on crea
   - [ ] Prepare final test report
   - [ ] Archive test documents for future reference
 
+# Test cases definition
+
+| Test Case               | Description                                      | Expected Outcome                                                                                    |
+|-------------------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Valid One-Way Flight Search | Input valid departure and destination cities, select a valid departure date, click "Search" | Display available flight from Chicago to San Francisco on the specified date. |
+| Invalid Departure City  | Input an invalid departure city                  | Display an error message indicating that the departure city is not recognized.                    |
+| Invalid Destination City| Input an invalid destination city                | Display an error message indicating that the destination city is not recognized.                  |
+| No Available Flights    | Select a date with no available flights          | Display a message indicating that there are no available flights for the selected date.            |
+| Past Departure Date     | Select a past departure date                     | Display an error message indicating that the selected departure date is in the past.               |
+| Future Departure Date   | Select a future departure date                   | Display available flight from Chicago to San Francisco on the specified future date.               |
+| Empty Departure City    | Leave the departure city field empty             | Highlight the departure city field as required and prompt the user to enter a departure city.      |
+| Empty Destination City  | Leave the destination city field empty           | Highlight the destination city field as required and prompt the user to enter a destination city.  |
+| Empty Departure Date    | Leave the departure date field empty             | Highlight the departure date field as required and prompt the user to select a departure date.     |
+
