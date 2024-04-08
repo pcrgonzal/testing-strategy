@@ -4,10 +4,10 @@ This is part of an application process. The goal is to show my knowledge on crea
 # Overall Tasks and Subtasks to every E2E strategy (Test cases only apply to Search Box functionality)
 
 - [ ] **Prepare Test Environment**
-  - [ ] Set up testing server 
-  - [ ] Install necessary software and tools
-  - [ ] Configure network settings
-  - [ ] Prepare test data
+  - [ ] Set up testing server (no server atm)
+  - [ ] Install necessary software and tools (cypress)
+  - [ ] Configure network settings (available connection)
+  - [ ] Prepare test data (inputs)
 - [ ] **Develop Test Plan** #Planning
   - [ ] Identify test objectives
   - [ ] Define test scope
@@ -45,11 +45,12 @@ This is part of an application process. The goal is to show my knowledge on crea
   - [ ] Archive test documents for future reference
 
 # Test cases definition
+## Focusing on flights from Chicago
 
 | Test Case               | Description                                      | Expected Outcome                                                                                    |
 |-------------------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Valid One-Way Flight Search | Input valid departure and destination cities, select a valid departure date, click "Search" | Display available flight from Chicago to San Francisco on the specified date. |
-| Invalid Departure City  | Input an invalid departure city                  | Display an error message indicating that the departure city is not recognized.                    |
+| Valid One-Way Flight Search | Switch to One-way, select a valid departure date, click "Search flights" | Display available flight from Chicago to San Francisco on the specified date. |
+| Invalid Departure City  | Input an invalid departure city (not Chicago)                 | Display an error message indicating that the departure city is not recognized.                    |
 | Invalid Destination City| Input an invalid destination city                | Display an error message indicating that the destination city is not recognized.                  |
 | No Available Flights    | Select a date with no available flights          | Display a message indicating that there are no available flights for the selected date.            |
 | Past Departure Date     | Select a past departure date                     | Display an error message indicating that the selected departure date is in the past.               |
